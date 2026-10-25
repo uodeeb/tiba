@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Noto Kufi Arabic', 'Tajawal', sans-serif;
+  }
+  
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Luxury Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0c0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a251e;
+  border-radius: 9999px;
+  border: 1px solid rgba(242, 202, 80, 0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f2ca50;
+}
+
+/* Gold Shimmer & Glow Animations */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff7d6 0%, #f2ca50 45%, #e8c178 75%, #b38b33 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to bottom right, #f2ca50, #b38b33, #3a2e15) 1;
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(242, 202, 80, 0.15);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 45px rgba(242, 202, 80, 0.25);
+}
+
+@keyframes royalPulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(242, 202, 80, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(242, 202, 80, 0.7);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-royal-glow {
+  animation: royalPulseGlow 2s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Waybill Print Styling (Strictly formatted for 4x6 inch thermal paper roll / label printer) */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-waybill, #printable-waybill * {
+    visibility: visible;
+  }
+  #printable-waybill {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 4in;
+    min-height: 6in;
+    margin: 0;
+    padding: 12px;
+    background: white !important;
+    color: black !important;
+    font-family: 'Tajawal', sans-serif;
+    page-break-after: always;
+  }
+  @page {
+    size: 4in 6in;
+    margin: 0;
+  }
+}

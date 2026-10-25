@@ -1,0 +1,6 @@
+{
+  "name": "طيبة للعطور والعود الملكي | Tiba Royal Oud",
+  "description": "المنصة الرسمية لدار طيبة للعطور والعود الملكي بأسيوط وكافة محافظات مصر. تشكيلة عطور فاخرة، مستشار العطور الذكي، ونظام إدارة العمليات اللوجستية المتكامل.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

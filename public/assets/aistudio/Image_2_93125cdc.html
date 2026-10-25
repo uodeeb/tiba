@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&amp;family=Noto+Serif:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#141312", "on-secondary-fixed-variant": "#5c4203", "primary-container": "#d4af37", "on-error-container": "#ffdad6", "on-surface": "#e7e1df", "secondary-fixed-dim": "#e8c178", "primary-fixed": "#ffe088", "secondary": "#e8c178", "error": "#ffb4ab", "on-primary-fixed-variant": "#574500", "surface-bright": "#3b3937", "background": "#141312", "on-tertiary-fixed": "#002109", "on-error": "#690005", "on-primary-fixed": "#241a00", "on-tertiary": "#003915", "surface-container": "#211f1e", "primary-fixed-dim": "#e9c349", "tertiary-container": "#18cd61", "inverse-surface": "#e7e1df", "surface-dim": "#141312", "on-secondary-fixed": "#261900", "inverse-on-surface": "#32302e", "error-container": "#93000a", "on-surface-variant": "#d0c5af", "secondary-fixed": "#ffdea4", "surface-container-lowest": "#0f0e0d", "on-secondary": "#412d00", "tertiary-fixed-dim": "#3de273", "surface-tint": "#e9c349", "surface-variant": "#363433", "on-tertiary-fixed-variant": "#005322", "primary": "#f2ca50", "on-tertiary-container": "#005021", "outline": "#99907c", "on-background": "#e7e1df", "surface-container-highest": "#363433", "tertiary": "#47ea7a", "secondary-container": "#5f4505", "outline-variant": "#4d4635", "on-primary-container": "#554300", "on-secondary-container": "#d9b36c", "on-primary": "#3c2f00", "inverse-primary": "#735c00", "surface-container-high": "#2b2a28", "surface-container-low": "#1d1b1a", "tertiary-fixed": "#66ff8e" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1.25rem", "margin-mobile": "1.25rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "gutter": "1.5rem", "space-lg": "2rem", "gutter-mobile": "1rem", "space-sm": "0.75rem", "margin": "3rem" }, "fontFamily": { "display-royal": [ "Noto Serif" ], "headline-md": [ "Noto Serif" ], "body-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Noto Serif" ], "display-royal-mobile": [ "Noto Serif" ], "headline-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "label-numeric-lg": [ "JetBrains Mono" ], "headline-lg-mobile": [ "Noto Serif" ], "label-numeric-md": [ "JetBrains Mono" ], "body-sm": [ "Plus Jakarta Sans" ], "label-caps": [ "Plus Jakarta Sans" ] }, "fontSize": { "display-royal": [ "48px", { "lineHeight": "68px", "fontWeight": "700" } ], "headline-md": [ "28px", { "lineHeight": "42px", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg": [ "36px", { "lineHeight": "52px", "fontWeight": "700" } ], "display-royal-mobile": [ "34px", { "lineHeight": "48px", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "30px", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "30px", "fontWeight": "400" } ], "label-numeric-lg": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "38px", "fontWeight": "700" } ], "label-numeric-md": [ "16px", { "lineHeight": "22px", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-caps": [ "11px", { "lineHeight": "16px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container-lowest text-on-surface font-body-md text-body-md relative min-h-screen"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-md pb-space-lg shadow-[0_0_40px_rgba(0,0,0,0.7)]"><div class="px-space-md mb-space-lg flex items-center gap-space-xs"><img alt="Tiba Perfumes Royal Calligraphic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiLj6PKIqbK8hd3mf5HkqJ5OLUla5pOONtykvi62I6bxX1If4SrSJTZcVzCLpZhs6q6IHXL-JH8uQDMMxYUzQxcvPHzyKF4VuIbnXSC-h-7sugBoIOZmRnVZJQPCKkADZZyvo-BleS4eBS8oRqBypNjX-kA-fcnUJ3q3-3T33_5dj8wwddMMnSY0CDzr-mw-9bR-rOrpGOv76AFmsZttv7dEFXnQV9fUBItFpqGxfIf8z4J7gRhdwi6A"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold">طيبة للإدارة</span><span class="font-label-caps text-label-caps text-on-surface-variant">فرع أسيوط والتوزيع</span></div></div><nav class="flex-1 px-space-sm space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="admin" href="#"><span class="font-body-md text-body-md">لوحة القيادة والملخص</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="admin-orders" href="#"><span class="font-body-md text-body-md">إدارة الطلبات والشحن</span><span class="bg-primary text-on-primary font-label-numeric-md text-[11px] px-2 py-0.5 rounded-full font-bold">4 جديد</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="admin-products" href="#"><span class="font-body-md text-body-md">خزانة العطور والأسعار</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="admin-promotions" href="#"><span class="font-body-md text-body-md">العروض والباقات والشحن</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="admin-analytics" href="#"><span class="font-body-md text-body-md">تحليلات المستشار والعملاء</span></a></nav><div class="px-space-md py-space-sm bg-surface-container-lowest/60 mx-space-sm rounded-lg"><div class="flex items-center gap-space-xs"><div class="w-9 h-9 rounded-full bg-primary/20 text-primary border border-primary/30 flex items-center justify-center font-bold font-headline-sm text-sm">أ</div><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface font-semibold">أحمد الطيبي</span><span class="font-label-caps text-label-caps text-primary">المدير التنفيذي</span></div></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface-container-lowest/85 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2"><img alt="طيبة للعطور" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiLj6PKIqbK8hd3mf5HkqJ5OLUla5pOONtykvi62I6bxX1If4SrSJTZcVzCLpZhs6q6IHXL-JH8uQDMMxYUzQxcvPHzyKF4VuIbnXSC-h-7sugBoIOZmRnVZJQPCKkADZZyvo-BleS4eBS8oRqBypNjX-kA-fcnUJ3q3-3T33_5dj8wwddMMnSY0CDzr-mw-9bR-rOrpGOv76AFmsZttv7dEFXnQV9fUBItFpqGxfIf8z4J7gRhdwi6A"/><span class="font-headline-sm text-headline-sm text-primary font-bold hidden sm:inline">طيبة للإدارة - فرع أسيوط والتوزيع</span></div><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40"><span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-caps text-label-caps text-on-surface">المتجر متصل ويستقبل الطلبات فوراً</span></div></div><div class="flex items-center gap-space-sm"><a class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-secondary hover:text-primary transition-all font-body-sm text-body-sm flex items-center gap-1" href="/" target="_blank"><span>معاينة المتجر كعميل 👁️</span></a><div class="flex items-center gap-space-xs pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary text-xs">أ</div><div class="hidden md:flex flex-col text-right"><span class="font-body-sm text-body-sm text-on-surface font-semibold leading-tight">أحمد الطيبي</span><span class="font-label-caps text-label-caps text-primary leading-tight">المدير التنفيذي</span></div></div></div></header><main class="relative pt-16 w-full px-space-lg min-h-screen bg-transparent"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Ambient Glow Field -->
+<div class="relative w-full overflow-hidden mb-space-lg">
+<div class="absolute -top-32 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute -top-24 left-1/4 w-80 h-80 bg-tertiary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- Section Header Bar -->
+<div class="relative flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container/70 backdrop-blur-2xl p-space-lg rounded-xl shadow-xl">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider">استخبارات العطور وذاكرة الزوار الملكية</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">
+          تحليلات أذواق العملاء وذكاء مستشار طيبة العطري
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          بيانات Zero-Party مباشرة من إجابات الزوار داخل بوتقة الخيميائي، تكشف التفضيلات العطرية العميقة، كيمياء الفوحان ومعدلات التحويل لشهر فبراير 2026.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<!-- Date Selector Module -->
+<div class="flex items-center gap-2 bg-surface-container-high px-space-sm py-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-lg">calendar_month</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">هذا الشهر (فبراير 2026)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">expand_more</span>
+</div>
+<!-- Export Action -->
+<button class="flex items-center gap-2 bg-gradient-to-r from-primary-container via-primary to-primary-fixed-dim text-on-primary px-space-md py-2 rounded-lg shadow-lg hover:shadow-primary/20 transition-all font-body-sm text-body-sm font-bold">
+<span class="material-symbols-outlined text-lg">description</span>
+<span>تصدير تقرير PDF/Excel 📊</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Metrics Strip: Conversion Funnel (4 Cards Row) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-lg">
+<!-- KPI 1 -->
+<div class="relative bg-surface-container-low/90 backdrop-blur-xl p-space-md rounded-xl shadow-md flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-l from-primary via-primary/30 to-transparent"></div>
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">المرحلة الأولى: الاستقطاب</span>
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">auto_fix</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold">1,420</span>
+<span class="font-body-sm text-body-sm text-tertiary font-bold flex items-center gap-0.5" dir="ltr">
+<span>+38%</span>
+<span class="material-symbols-outlined text-xs">trending_up</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">عدد مرات دخول بوتقة المستشار</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">زوار من منصات الصعيد والقاهرة</p>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="relative bg-surface-container-low/90 backdrop-blur-xl p-space-md rounded-xl shadow-md flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-l from-secondary via-secondary/30 to-transparent"></div>
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">المرحلة الثانية: التفاعل الحسي</span>
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">checklist_rtl</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-secondary font-bold">84.6%</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface-variant text-xs">(1,202 عميل)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">نسبة إكمال الاختبار حتى كشف البصمة</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">معدل ارتداد ضئيل أقل من 15.4%</p>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="relative bg-surface-container-low/90 backdrop-blur-xl p-space-md rounded-xl shadow-md flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-l from-tertiary via-tertiary/30 to-transparent"></div>
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">المرحلة الثالثة: العائد التجاري</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-tertiary font-bold">19.8%</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface-variant text-xs">(238 طلب مباشر)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">نسبة التحويل للشراء أو واتساب</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">تحويلات مؤكدة الدفع أو الشحن</p>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="relative bg-surface-container-low/90 backdrop-blur-xl p-space-md rounded-xl shadow-md flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-l from-primary via-primary-container to-transparent"></div>
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">البصمة الأكثر طلباً</span>
+<div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">workspace_premium</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">طويق الملكي</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-semibold">68%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">العطر الأكثر تطابقاً بالإجماع</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">تطابق نوتات الجلد والعود والعنبر</p>
+</div>
+</div>
+</div>
+<!-- Bento Grid Analytics Showcase -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Card 1: Scent Family Distribution (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-low/95 backdrop-blur-2xl p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">pie_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">توزيع العائلات العطرية الأكثر طلباً في مصر</h2>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container-high text-secondary px-space-xs py-1 rounded">1,202 استبيان مكتمل</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          تحليل بصمات الشم استناداً إلى أسئلة المناسبات، حرارة الأجواء، والشخصية العطرية المفضلة لدى عملاء طيبة.
+        </p>
+<!-- Donut & Data Grid Split -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center my-space-sm">
+<!-- Donut Graphic (Inline SVG) -->
+<div class="md:col-span-5 flex flex-col items-center justify-center relative">
+<div class="w-48 h-48 relative flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<!-- Outer background ring -->
+<circle class="text-surface-container-highest/40" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-width="12"></circle>
+<!-- 1. العود الملكي (54%) -> circumference = 2 * PI * 38 = ~238.76 | 54% = 128.9 -->
+<circle class="text-primary transition-all duration-700 hover:opacity-90" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="128.9 238.8" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- 2. التوابل الشرقية (22%) -> 22% = 52.5 | offset = -128.9 -->
+<circle class="text-secondary transition-all duration-700" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="52.5 238.8" stroke-dashoffset="-128.9" stroke-width="12"></circle>
+<!-- 3. مسك النظافة (14%) -> 14% = 33.4 | offset = -(128.9 + 52.5) = -181.4 -->
+<circle class="text-tertiary transition-all duration-700" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="33.4 238.8" stroke-dashoffset="-181.4" stroke-width="12"></circle>
+<!-- 4. الحمضيات ونسيم البحر (10%) -> 10% = 23.9 | offset = -(181.4 + 33.4) = -214.8 -->
+<circle class="text-primary-fixed-dim transition-all duration-700" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="23.9 238.8" stroke-dashoffset="-214.8" stroke-width="12"></circle>
+</svg>
+<!-- Center Metric Indicator -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">54%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">الأغلبية للعود</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-2 text-center">انحياز تاريخي وثابت للفخامة الصعيدية</span>
+</div>
+<!-- Progress Bars Breakdown -->
+<div class="md:col-span-7 space-y-space-sm">
+<!-- Item 1 -->
+<div class="bg-surface-container/60 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-body-sm text-body-sm mb-1">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                  العود الملكي والعنبر الشرقي
+                </span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold">54%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 54%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mt-1">المطابق المباشر: طويق والعود المعتق الكمبودي</span>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container/60 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-body-sm text-body-sm mb-1">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                  التوابل الشرقية الدافئة والفانيليا
+                </span>
+<span class="font-label-numeric-md text-label-numeric-md text-secondary font-bold">22%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full" style="width: 22%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mt-1">المطابق المباشر: عطر كاشغر الملوكي</span>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container/60 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-body-sm text-body-sm mb-1">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+                  مسك النظافة الأبيض والزهور
+                </span>
+<span class="font-label-numeric-md text-label-numeric-md text-tertiary font-bold">14%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2">
+<div class="bg-tertiary h-2 rounded-full" style="width: 14%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mt-1">المطابق المباشر: مسك الطهارة والحرير الملكي</span>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container/60 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-body-sm text-body-sm mb-1">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span>
+                  الحمضيات المنعشة ونسيم البحر
+                </span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary-fixed-dim font-bold">10%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2">
+<div class="bg-primary-fixed-dim h-2 rounded-full" style="width: 10%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mt-1">المطابق المباشر: عطر نسيم طيبة الصيفي</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Olfactory Insight Tag -->
+<div class="mt-space-md p-space-sm bg-surface-container-highest/40 rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0">insights</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="text-primary font-semibold">استنتاج خبير طيبة:</strong> تفوق ساحق لنوتات الراتنجات والبخور في صعيد مصر مقارنة بنوتات الحمضيات التي تنشط بالأساس في الإسكندرية والساحل الشمالي.
+        </p>
+</div>
+</div>
+<!-- Card 2: Geographic Distribution (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-low/95 backdrop-blur-2xl p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">map</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">التوزيع الجغرافي للطلبات</h2>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-space-xs py-1 rounded">محافظات مصر</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          تحليل المحافظات الأكثر تفاعلاً وطلباً للمنتجات عقب اجتياز مستشار الرائحة.
+        </p>
+<!-- Geo Progress Listing -->
+<div class="space-y-space-md">
+<!-- Region 1 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                محافظة أسيوط والوادي الجديد
+              </span>
+<span class="font-label-numeric-lg text-label-numeric-md text-primary font-bold">38%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden">
+<div class="bg-gradient-to-l from-primary to-primary-container h-2.5 rounded-full" style="width: 38%"></div>
+</div>
+<p class="font-label-caps text-label-caps text-secondary mt-1">الأعلى طلباً واستلاماً من المعرض الرئيسي بأسيوط</p>
+</div>
+<!-- Region 2 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                القاهرة الكبرى والجيزة
+              </span>
+<span class="font-label-numeric-lg text-label-numeric-md text-secondary font-bold">34%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden">
+<div class="bg-gradient-to-l from-secondary to-secondary-fixed h-2.5 rounded-full" style="width: 34%"></div>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">أعلى طلبات الشحن السريع VIP (خلال 48 ساعة)</p>
+</div>
+<!-- Region 3 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                سوهاج، المنيا، وقنا (صعيد مصر)
+              </span>
+<span class="font-label-numeric-lg text-label-numeric-md text-tertiary font-bold">16%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden">
+<div class="bg-tertiary h-2.5 rounded-full" style="width: 16%"></div>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">معدل سلة مرتفع لدهن العود الصافي والمخلطات</p>
+</div>
+<!-- Region 4 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-md text-body-md text-on-surface font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-on-surface-variant"></span>
+                الإسكندرية والوجه البحري
+              </span>
+<span class="font-label-numeric-lg text-label-numeric-md text-on-surface-variant font-bold">12%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden">
+<div class="bg-on-surface-variant h-2.5 rounded-full" style="width: 12%"></div>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">تركز الطلب على العطور الزهرية ومسك الطهارة</p>
+</div>
+</div>
+</div>
+<!-- Quick Delivery Badge Strip -->
+<div class="mt-space-md p-space-sm bg-surface-container rounded-lg flex items-center justify-between text-on-surface">
+<span class="font-body-sm text-body-sm font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-lg">local_shipping</span>
+          جاهزية أسطول التوزيع الصعيدي
+        </span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold">متوسط التوصيل: 24-48 ساعة</span>
+</div>
+</div>
+<!-- Card 3: Summer Longevity & Diffusion Matrix (5 Cols) -->
+<div class="lg:col-span-5 bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-high p-space-lg rounded-xl shadow-xl flex flex-col justify-between relative overflow-hidden">
+<!-- Background Ambient Visual -->
+<div class="absolute -bottom-10 -left-10 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">thermostat</span>
+            محددات المناخ الصعيدي
+          </span>
+<span class="font-label-numeric-md text-label-numeric-md text-secondary bg-surface-container-lowest px-2 py-0.5 rounded">
+            +40°C معيار الثبات
+          </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-sm">
+          مصفوفة أسباب تفضيل الفوحان الصيفي
+        </h3>
+<!-- Editorial Quote Callout -->
+<div class="relative p-space-md bg-surface-container-lowest/80 rounded-xl my-space-sm">
+<div class="text-4xl text-primary font-display-royal leading-none absolute top-2 right-2 opacity-30">“</div>
+<p class="font-body-md text-body-md text-primary font-semibold relative z-10 pr-4 leading-relaxed">
+            88% من المشاركين أكدوا حاجتهم الملحة لثبات يتحدى حرارة 40°C في أسيوط والصعيد دون أن يتغير العبير أو ينقلب إلى رائحة كحولية حادة.
+          </p>
+</div>
+<!-- Sensor Metrics Table -->
+<div class="space-y-space-xs mt-space-md font-body-sm text-body-sm">
+<div class="flex justify-between items-center py-2 bg-surface-container-highest/20 px-space-xs rounded">
+<span class="text-on-surface-variant">طلب الزيوت النقية الخالية من المذيبات الكحولية</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold">92%</span>
+</div>
+<div class="flex justify-between items-center py-2 bg-surface-container-highest/20 px-space-xs rounded">
+<span class="text-on-surface-variant">تفضيل بقاء الفوحان على الثوب أكثر من 18 ساعة</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold">79%</span>
+</div>
+<div class="flex justify-between items-center py-2 bg-surface-container-highest/20 px-space-xs rounded">
+<span class="text-on-surface-variant">تفضيل العبوات سهلة الحمل للجلباب والسيارة</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold">64%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">تأكيد مختبر الخلط بفرع أسيوط</span>
+<span class="font-body-sm text-body-sm text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span>
+          تركيز ملكي 40% Extrait de Parfum
+        </span>
+</div>
+</div>
+<!-- Card 4: Post-Discovery Conversion Paths (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-low/95 backdrop-blur-2xl p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              مسارات التحويل الأكثر نجاحاً بعد كشف البصمة (96% دقة)
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              تحديد الإجراء النهائي الذي يتخذه العميل عقب قراءة نتائج تحليل خيميائي طيبة.
+            </p>
+</div>
+<span class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">conversion_path</span>
+</span>
+</div>
+<!-- Conversion Funnel Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm my-space-md">
+<!-- Path 1: Discovery Discovery Box (48%) -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between relative group hover:bg-surface-container-high transition-all">
+<div class="flex justify-between items-start mb-space-sm">
+<span class="font-label-caps text-label-caps bg-primary/20 text-primary px-2 py-0.5 rounded font-bold">الخيار الأول</span>
+<span class="material-symbols-outlined text-primary">inventory_2</span>
+</div>
+<div>
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold block mb-1">48%</span>
+<h4 class="font-body-md text-body-md text-on-surface font-bold leading-tight">طلب عينات باقة الاستكشاف</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+                (سعر رمزي 190 ج.م يسترد عند شراء الحجم الكامل)
+              </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">التحويلات:</span>
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold">114 عميل</span>
+</div>
+</div>
+<!-- Path 2: Full Bottle Direct Order (34%) -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between relative group hover:bg-surface-container-high transition-all">
+<div class="flex justify-between items-start mb-space-sm">
+<span class="font-label-caps text-label-caps bg-secondary/20 text-secondary px-2 py-0.5 rounded font-bold">شراء فوري</span>
+<span class="material-symbols-outlined text-secondary">payments</span>
+</div>
+<div>
+<span class="font-label-numeric-lg text-label-numeric-lg text-secondary font-bold block mb-1">34%</span>
+<h4 class="font-body-md text-body-md text-on-surface font-bold leading-tight">طلب الزجاجة الكبيرة الفوري</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+                (شراء مباشر 100 مل / تولة ملكية عبر سلة المتجر)
+              </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">التحويلات:</span>
+<span class="font-label-numeric-md text-label-numeric-md text-secondary font-bold">81 عميل</span>
+</div>
+</div>
+<!-- Path 3: WhatsApp VIP Concierge (18%) -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between relative group hover:bg-surface-container-high transition-all">
+<div class="flex justify-between items-start mb-space-sm">
+<span class="font-label-caps text-label-caps bg-tertiary/20 text-tertiary px-2 py-0.5 rounded font-bold">مستشار مباشر</span>
+<span class="material-symbols-outlined text-tertiary">chat</span>
+</div>
+<div>
+<span class="font-label-numeric-lg text-label-numeric-lg text-tertiary font-bold block mb-1">18%</span>
+<h4 class="font-body-md text-body-md text-on-surface font-bold leading-tight">استشارة خبير طيبة عبر واتساب</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-xs">
+                (طلب مخصصات ومناسبات خاصة مع خبير العطور)
+              </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">التحويلات:</span>
+<span class="font-label-numeric-md text-label-numeric-md text-tertiary font-bold">43 عميل</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Pipeline Sparkline / Visual Action Footer -->
+<div class="p-space-sm bg-surface-container-highest/30 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm mt-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-body-sm text-body-sm text-on-surface">إجمالي قيمة التحويلات الناتجة عن المستشار:</span>
+<span class="font-label-numeric-lg text-label-numeric-md text-primary font-bold">482,600 ج.م</span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-bright text-primary px-space-md py-1.5 rounded-lg text-body-sm font-semibold transition-all flex items-center gap-1.5">
+<span>تفاصيل سجل الإجابات الحية</span>
+<span class="material-symbols-outlined text-sm">arrow_left</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Deep Dive: Live Respondent Taste Stream & Recent Discoveries -->
+<div class="mt-space-lg bg-surface-container-low/95 backdrop-blur-2xl p-space-lg rounded-xl shadow-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">psychology</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">أحدث بصمات الزوار المكتشفة في الوقت الحقيقي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تحديث مستمر من شاشة مستشار الزبائن في معرض أسيوط وبوابة الويب</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/20 px-3 py-1 rounded-full font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          تزامن حي (Live Feed)
+        </span>
+</div>
+</div>
+<!-- Table of Live Stream Taste Insights -->
+<div class="overflow-x-auto">
+<table class="w-full text-right font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-label-caps text-label-caps">
+<th class="py-space-sm px-space-md rounded-r-lg">العميل / المدينة</th>
+<th class="py-space-sm px-space-md">الوقت</th>
+<th class="py-space-sm px-space-md">الأجواء والمناسبة المختارة</th>
+<th class="py-space-sm px-space-md">البصمة العطرية المطابقة</th>
+<th class="py-space-sm px-space-md">نسبة التطابق</th>
+<th class="py-space-sm px-space-md rounded-l-lg">الإجراء المتخذ</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/20">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-all">
+<td class="py-space-sm px-space-md font-semibold text-on-surface flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-xs">م</span>
+<span>محمد عبد الرحمن (أسيوط - الهلالي)</span>
+</td>
+<td class="py-space-sm px-space-md font-label-numeric-md text-label-numeric-md text-on-surface-variant">منذ 4 دقائق</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">سهرات مسائية شتوية • مناسبات رسمية</td>
+<td class="py-space-sm px-space-md font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+              عطر طويق الملكي (تعتيق 12 سنة)
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded font-label-numeric-md text-label-numeric-md font-bold">98%</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-tertiary/15 text-tertiary px-space-xs py-1 rounded text-xs font-bold flex items-center gap-1 w-fit">
+<span class="material-symbols-outlined text-xs">shopping_bag</span>
+                شراء مباشر (100 مل)
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/50 transition-all">
+<td class="py-space-sm px-space-md font-semibold text-on-surface flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold text-xs">س</span>
+<span>سارة المعتز (القاهرة - التجمع)</span>
+</td>
+<td class="py-space-sm px-space-md font-label-numeric-md text-label-numeric-md text-on-surface-variant">منذ 11 دقيقة</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">عمل صباحي ممتد • انتعاش غير مكرر</td>
+<td class="py-space-sm px-space-md font-bold text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+              مسك الطهارة والحرير الملوكي
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="bg-secondary/10 text-secondary px-2 py-0.5 rounded font-label-numeric-md text-label-numeric-md font-bold">94%</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-primary/15 text-primary px-space-xs py-1 rounded text-xs font-bold flex items-center gap-1 w-fit">
+<span class="material-symbols-outlined text-xs">inventory_2</span>
+                طلب باقة الاستكشاف
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/50 transition-all">
+<td class="py-space-sm px-space-md font-semibold text-on-surface flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-tertiary/20 text-tertiary flex items-center justify-center font-bold text-xs">ح</span>
+<span>حسام الدين البدري (سوهاج)</span>
+</td>
+<td class="py-space-sm px-space-md font-label-numeric-md text-label-numeric-md text-on-surface-variant">منذ 26 دقيقة</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">مجالس عربية • قوة فوحان في حرارة شديدة</td>
+<td class="py-space-sm px-space-md font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+              دهن عود كلمنتان غابات ملكي
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded font-label-numeric-md text-label-numeric-md font-bold">96%</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-surface-bright text-on-surface px-space-xs py-1 rounded text-xs font-bold flex items-center gap-1 w-fit">
+<span class="material-symbols-outlined text-xs">support_agent</span>
+                محادثة واتساب مخصصة
+              </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/50 transition-all">
+<td class="py-space-sm px-space-md font-semibold text-on-surface flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-xs">خ</span>
+<span>خالد الشريف (المنيا)</span>
+</td>
+<td class="py-space-sm px-space-md font-label-numeric-md text-label-numeric-md text-on-surface-variant">منذ 42 دقيقة</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">استخدام يومي راقي • دفء التوابل</td>
+<td class="py-space-sm px-space-md font-bold text-primary-fixed-dim flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+              عطر كاشغر الهندي
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="bg-primary-fixed-dim/10 text-primary-fixed-dim px-2 py-0.5 rounded font-label-numeric-md text-label-numeric-md font-bold">91%</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-tertiary/15 text-tertiary px-space-xs py-1 rounded text-xs font-bold flex items-center gap-1 w-fit">
+<span class="material-symbols-outlined text-xs">shopping_bag</span>
+                شراء مباشر (زجاجتان)
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Action Bar for Export and Model Re-weighting -->
+<div class="mt-space-md pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm bg-surface-container-highest/20 p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">tune</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">تعديل أوزان خوارزمية التطابق العطري لفصل الربيع القادم</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface text-body-sm font-semibold transition-all">
+          إعادة ضبط الأوزان اليدوية
+        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary text-body-sm font-bold shadow-md hover:shadow-primary/20 transition-all">
+          حفظ ونشر التعديلات الحسابية
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
